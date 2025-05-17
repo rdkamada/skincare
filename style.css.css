@@ -1,0 +1,148 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f3f0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2a2a2a;
+}
+
+/* Header */
+header {
+    background-color: #ffb6c1;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Seções */
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffb6c1;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #d46a6a;
+}
+
+/* Imagens */
+.content-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Rotinas */
+.routine-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.routine-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Tipos de Pele */
+.skin-types, .ingredients {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skin-card, .ingredient-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 40px;
+    background: #fff0f5;
+    border-radius: 8px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #d46a6a;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #b85757;
+}
+
+/* Footer */
+footer {
+    background: #2a2a2a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ffb6c1;
+    text-decoration: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .routine-container {
+        flex-direction: column;
+    }
+}
